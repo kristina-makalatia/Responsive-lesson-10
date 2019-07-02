@@ -1,0 +1,126 @@
+.container{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+}
+.nav-ul{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.nav-li{
+	margin-right:15px;
+}
+.social{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.flex{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.image{
+	width: 300px;
+	margin-right:20px;
+	-webkit-box-shadow: 5px 10px red;
+	        box-shadow: 5px 10px red;
+}
+.wraper{
+	margin-top:30px;
+}
+.text p{
+	color: blue;
+	font-size: 18px;
+}
+.img{
+	width: 300px;
+}
+.flex1{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.social-icon{
+	color: red;
+	font-size: 30px;
+	-webkit-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.social-icon:hover{
+	color: blue;
+	cursor: pointer;
+}
+.burger{
+	display: none;
+}
+.fa-bars{
+	font-size: 30px;
+	color: red;
+}
+@media (max-width: 1024px){
+	.flex{
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		/*justify-content: center;*/
+	}
+	.flex1{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.img{
+		margin-top: 20px;
+	}
+	.image{
+		width: 500px;
+	}
+	.text{
+		margin-top:20px;
+	}
+	.navigation{
+		display: none;
+	}
+	.burger{
+		display: block;
+
+	}
+}
+@media (max-width: 768px){
+	.flex{
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: reverse;
+		    -ms-flex-direction: column-reverse;
+		        flex-direction: column-reverse;
+	}
+	.text{
+		margin-top:0;
+	}
+	.text p{
+		color:orange;
+	}
+	.image{
+		margin-top: 30px;
+	}
+}
+@media (max-width: 520px){
+	.image {
+		max-width: 300px;
+		width: 100%;
+	}
+}
